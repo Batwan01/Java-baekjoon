@@ -1,4 +1,4 @@
-package main;
+package baekjoon;
 import java.io.*;
 
 public class M15552 {

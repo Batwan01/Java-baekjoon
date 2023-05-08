@@ -1,4 +1,4 @@
-package main;
+package baekjoon;
 import java.util.*;
 public class M10813 {
 	public static void main(String[] args) {
