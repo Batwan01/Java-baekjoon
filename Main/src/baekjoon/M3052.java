@@ -20,5 +20,4 @@ public class M3052 {
 		System.out.println(10-count);
 		sc.close();
 	}
-	
 }
