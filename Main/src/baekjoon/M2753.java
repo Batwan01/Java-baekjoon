@@ -9,5 +9,6 @@ public class M2753 {
 			if(a%100 != 0 || a%400 == 0) System.out.println("1");
 			else System.out.println("0");
 		else System.out.println("0");
+		sc.close();
 	}
 }

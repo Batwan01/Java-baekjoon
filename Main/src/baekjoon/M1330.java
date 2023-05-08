@@ -10,5 +10,6 @@ public class M1330 {
 		if(a>b) System.out.println(">");
 		else if(a<b) System.out.println("<");
 		else System.out.println("==");
+		sc.close();
 	}
 }

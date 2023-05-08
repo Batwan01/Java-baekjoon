@@ -9,5 +9,6 @@ public class m9498 {
 		else if(a>=70) System.out.println("C");
 		else if(a>=60) System.out.println("D");
 		else System.out.println("F");
+		sc.close();
 	}
 }

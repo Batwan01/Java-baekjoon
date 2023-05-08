@@ -13,5 +13,6 @@ public class M2525 {
 				System.out.println(sum/60 + " " + sum%60);
 			}
 			else System.out.println(sum/60 + " " + sum%60);
+			sc.close();
 	}
 }

@@ -9,5 +9,6 @@ public class M10998 {
 		b = sc.nextDouble();
 		
 		System.out.print(a/b);
+		sc.close();
 	}
 }

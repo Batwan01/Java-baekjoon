@@ -18,5 +18,6 @@ public class M2884 {
 			b = time - a*60;
 			System.out.printf("%d %d",a, b);
 		}
+		sc.close();
 	}
 }
