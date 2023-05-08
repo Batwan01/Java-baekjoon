@@ -15,4 +15,3 @@ public class M10430 {
 		sc.close();
 	}	
 }
-sss
