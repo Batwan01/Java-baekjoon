@@ -10,5 +10,6 @@ public class M8393 {
 			sum+=i;
 		}
 		System.out.print(sum);
+		sc.close();
 	}
 }
