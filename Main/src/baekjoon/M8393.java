@@ -11,4 +11,5 @@ public class M8393 {
 		}
 		System.out.print(sum);
 	}
+	
 }
