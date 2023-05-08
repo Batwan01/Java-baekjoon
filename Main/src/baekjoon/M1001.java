@@ -9,5 +9,6 @@ public class M1001 {
 		a = s.nextInt();
 		b = s.nextInt();
 		System.out.println(a-b);
+		s.close();
 	}	
 }
