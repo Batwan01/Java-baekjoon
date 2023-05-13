@@ -16,7 +16,6 @@ public class M2439 {
 			}
 			System.out.print("\n");
 		}
-		
 	}
 }
 
