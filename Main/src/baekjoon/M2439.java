@@ -1,6 +1,6 @@
 package baekjoon;
 import java.util.*;
-import java.io.*;
+
 
 public class M2439 {
 	public static void main(String[] args) {
@@ -16,6 +16,7 @@ public class M2439 {
 			}
 			System.out.print("\n");
 		}
+		sc.close();
 	}
 }
 
