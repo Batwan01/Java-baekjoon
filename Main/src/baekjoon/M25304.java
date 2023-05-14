@@ -14,5 +14,6 @@ public class M25304 {
 		}
 		if(sum == total) System.out.print("Yes");
 		else System.out.print("No");
+		sc.close();
 	}
 }
