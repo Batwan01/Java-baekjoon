@@ -25,5 +25,6 @@ public class M10811{
 		for(int i=1; i<=N; i++) {
 			System.out.print(basket[i]+" ");
 		}
+		sc.close();
 	}
 }
