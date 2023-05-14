@@ -9,5 +9,6 @@ public class M25314 {
 			System.out.print("long ");
 		}
 		System.out.print("int");
+		sc.close();
 	}
 }
