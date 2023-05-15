@@ -8,5 +8,6 @@ public class M2741 {
 		for(int i=1; i<=N; i++) {
 			System.out.println(i);
 		}
+		sc.close();
 	}
 }
