@@ -5,7 +5,6 @@ public class M1157 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String word = sc.next();
-		char words;
 		int num, max=0, pos=0;
 		int[] alpha = new int[26];
 		for(int i = 0; i<word.length(); i++) {
@@ -28,5 +27,6 @@ public class M1157 {
 		}
 		if(count == 1) System.out.printf("%c",pos+65);
 		else System.out.println("?");
+		sc.close();
 	}
 }
