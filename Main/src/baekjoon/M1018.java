@@ -64,7 +64,6 @@ public class M1018 {
 				k++;
 			}
 			h++; 
-			
 		}
 		
 		h=0; k=0; c=0; r=0;
