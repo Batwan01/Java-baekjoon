@@ -1,4 +1,4 @@
-package baekjoon;
+package main;
 import java.util.*;
 
 public class M10250 {
@@ -16,8 +16,8 @@ public class M10250 {
 			
 			if(N%H == 0) 
 			{
-				floor = N*100; //층수 구하기
-				number = N/H +1; //호수 구하기
+				floor = H*100; //층수 구하기
+				number = N/H; //호수 구하기
 			}
 			else 
 			{
