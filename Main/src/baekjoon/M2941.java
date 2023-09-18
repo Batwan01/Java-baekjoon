@@ -26,15 +26,20 @@ public class M2941 {
 					}
 					else { { count+=2; i++; break; } } //dz=가 아니면 글자수 +2, i +1
 				}
-				else if(word.charAt(i+1) == '-' ) { count++; i+=2; }
+				else if(word.charAt(i+1) == '-' ) { count++; i++; break;}
+				else { count++; break; }
 			case 'l':
-				count++; i++;
+				if(word.charAt(i+1) == 'j') { count++; i++; break; }
+				else { count++; break; }
 			case 'n':
-				count++; i++;
+				if(word.charAt(i+1) == 'j') { count++; i++; break; }
+				else { count++; break; }
 			case 's':
-				count++; i++;
+				if(word.charAt(i+1) == '=') { count++; i++; break; }
+				else { count++; break; }
 			case 'z':
-				count++; i++;
+				if(word.charAt(i+1) == '=') { count++; i++; break; }
+				else { count++; break; }
 			default:
 				count++;
 				break;
