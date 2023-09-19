@@ -20,6 +20,7 @@ public class M2941 {
 			case 'd':
 				if(word.charAt(i+1) == 'z') 
 				{ 
+					if(i+2 >= length ) { count+=2; i++; break; }
 					if(word.charAt(i+2) == '=') 
 					{
 						{ count++; i+=2; break; } //dz=면 글자수 +1, i+=2
