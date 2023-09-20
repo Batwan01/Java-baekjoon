@@ -1,5 +1,4 @@
 package baekjoon;
-
 import java.util.Scanner;
 
 public class M2941 {
