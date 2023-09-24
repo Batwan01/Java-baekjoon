@@ -20,6 +20,7 @@ public class M1181 {
 		}
 		
 		
+		
 		sc.close();
 	}
 }
