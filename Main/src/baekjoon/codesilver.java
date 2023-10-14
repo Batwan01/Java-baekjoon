@@ -13,45 +13,42 @@ class Book_Mangement{
 		find();
 	}
 	
-	public void input(){ //책 입력
-		
-		System.out.println("책 ( 책 제목, 저자, 책 가격 )");
-		System.out.print("책 제목 : ");
-		String title = sc.nextLine();
-		System.out.print("저자 : ");
-		String writer = sc.nextLine();
-		System.out.print("가격 : ");
-		int price = sc.nextInt();
-		sc.nextLine(); // 개행 제거
-		
-		book = new Book(title, writer, price); //Book
-		
-		System.out.println("책 ( 책 제목, 저자, 책 가격, 보안키 )");
-		System.out.print("책 제목 : ");
-		title = sc.nextLine();
-		System.out.print("저자 : ");
-		writer = sc.nextLine();
-		System.out.print("가격 : ");
-		price = sc.nextInt();
-		System.out.print("보안키 : ");
-		String key = sc.next();
-		sc.nextLine(); // 개행 제거
-		
-		ebook = new Ebook(title, writer, price, key); //Ebook
-		
-		System.out.println("책 ( 책 제목, 저자, 책 가격, 발행일 )");
-		System.out.print("책 제목 : ");
-		title = sc.nextLine();
-		System.out.print("저자 : ");
-		writer = sc.nextLine();
-		System.out.print("가격 : ");
-		price = sc.nextInt();
-		System.out.print("보안키 : ");
-		String date = sc.next();
-		sc.nextLine(); // 개행 제거
-		
-		magazine = new Magazine(title, writer, price, date); //Magazine
-	}
+	 private void inputBookDetails(String type) {
+	        System.out.print("책 제목 : ");
+	        String title = sc.nextLine().replaceAll(" ", "");
+	        System.out.print("저자 : ");
+	        String writer = sc.nextLine().replaceAll(" ", "");
+	        System.out.print("가격 : ");
+	        int price = sc.nextInt();
+	        sc.nextLine();  // 개행 제거
+	        
+	        switch(type) {
+	            case "book":
+	                book = new Book(title, writer, price);
+	                break;
+	            case "ebook":
+	                System.out.print("보안키 : ");
+	                String key = sc.next();
+	                sc.nextLine(); 
+	                ebook = new Ebook(title, writer, price, key);
+	                break;
+	            case "magazine":
+	                System.out.print("발행일 : ");
+	                String date = sc.next();
+	                sc.nextLine();
+	                magazine = new Magazine(title, writer, price, date);
+	                break;
+	        }
+	    }
+
+	    public void input() {
+	        System.out.println("책 (책 제목, 저자, 가격)");
+	        inputBookDetails("book");
+	        System.out.println("책 (책 제목, 저자, 가격, 보안키)");
+	        inputBookDetails("ebook");
+	        System.out.println("책 (책 제목, 저자, 가격, 발행일)");
+	        inputBookDetails("magazine");
+	    }
 	
 	public void find() { //책 찾기
 		
@@ -64,24 +61,24 @@ class Book_Mangement{
 			sc.nextLine();
 			switch (choice) {
 				case 1:
-					System.out.println("도서 명 : ");
+					System.out.print("도서 명 : ");
 					title = sc.nextLine();
 					title = remove_space(title); //공백 제거
 
-					if(book.gettitle() == title) book.show();
-					else if(ebook.gettitle() == title) ebook.show();
-					else if(magazine.gettitle() == title) magazine.show();
+					if(book.gettitle().equals(title)) book.show();
+					else if(ebook.gettitle().equals(title)) ebook.show();
+					else if(magazine.gettitle().equals(title)) magazine.show();
 					else System.out.println("없다!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 					
 					break;
 				case 2:
-					System.out.println("저자 : ");
+					System.out.print("저자 : ");
 					writer = sc.nextLine();
 					writer = remove_space(writer);
 					
-					if(book.getwriter() == writer) book.show();
-					else if(ebook.getwriter() == writer) ebook.show();
-					else if(magazine.getwriter() == writer) magazine.show();
+					if(book.getwriter().equals(writer)) book.show();
+					else if(ebook.getwriter().equals(writer)) ebook.show();
+					else if(magazine.getwriter().equals(writer)) magazine.show();
 					else System.out.println("없다!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 					
 					break;
